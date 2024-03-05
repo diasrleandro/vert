@@ -35,27 +35,22 @@ var valores = [
     {
         h4: "Valores",
         h2: "Excelência não se Negocia",
-        p: " <strong>- Excelência Profissional: <strong/> Comprometemo-nos em oferecer serviços de alta qualidade, baseados em conhecimento especializado e práticas atualizadas, visando sempre atender e superar as expectativas dos nossos clientes. ",
+        p: "- Integridade e Ética: Agimos com honestidade, transparência e responsabilidade em todas as interações com nossos clientes, colegas e partes interessadas, mantendo os mais altos padrões éticos em todas as nossas atividades. ",
     },
     {
         h4: "Valores",
         h2: "Excelência não se Negocia",
-        p: "<strong>- Integridade e Ética: <strong/> Agimos com honestidade, transparência e responsabilidade em todas as interações com nossos clientes, colegas e partes interessadas, mantendo os mais altos padrões éticos em todas as nossas atividades. ",
+        p: "- Parceria e Colaboração: Valorizamos o relacionamento de parceria com nossos clientes, trabalhando em estreita colaboração para entender suas necessidades específicas e oferecer soluções personalizadas que impulsionem seu sucesso financeiro e operacional.",
     },
     {
         h4: "Valores",
         h2: "Excelência não se Negocia",
-        p: "<strong>- Parceria e Colaboração: <strong/> Valorizamos o relacionamento de parceria com nossos clientes, trabalhando em estreita colaboração para entender suas necessidades específicas e oferecer soluções personalizadas que impulsionem seu sucesso financeiro e operacional.",
+        p: "- Inovação e Melhoria Contínua: Buscamos constantemente novas maneiras de aprimorar nossos serviços e processos, adotando tecnologias inovadoras e práticas eficientes para garantir a excelência e a eficácia em tudo o que fazemos.",
     },
     {
         h4: "Valores",
         h2: "Excelência não se Negocia",
-        p: "<strong>- Inovação e Melhoria Contínua: <strong/> Buscamos constantemente novas maneiras de aprimorar nossos serviços e processos, adotando tecnologias inovadoras e práticas eficientes para garantir a excelência e a eficácia em tudo o que fazemos.",
-    },
-    {
-        h4: "Valores",
-        h2: "Excelência não se Negocia",
-        p: "<strong>- Respeito e Empatia: <strong/> Respeitamos a diversidade, valorizamos as diferentes perspectivas e nos esforçamos para cultivar um ambiente inclusivo e acolhedor, onde todas as pessoas são tratadas com dignidade, respeito e empatia.",
+        p: "- Respeito e Empatia: Respeitamos a diversidade, valorizamos as diferentes perspectivas e nos esforçamos para cultivar um ambiente inclusivo e acolhedor, onde todas as pessoas são tratadas com dignidade, respeito e empatia.",
     }
 ];
 
@@ -79,7 +74,7 @@ var missao = [
 var produtosTitulo = [
     {
         h3: "Assessoria na gestão do negócio e implantação de soluções.",
-        h5: "Oferecer produtos aos nossos clientes com excelência e sólidos subsídios técnicos de suporte aos processos decisórios para que possam dedicar-se exclusivamente ao desenvolvimento da empresa",
+        h5: "Comprometemo-nos em oferecer serviços de alta qualidade, baseados em conhecimento especializado e práticas atualizadas, visando sempre atender e superar as expectativas dos nossos clientes.",
     }
 ];
 
@@ -167,16 +162,3 @@ var precos = [
         p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
     },
 ];
-
-
-// [13:32, 01/03/2024] Vert Consulting Monica: Serviços oferecidos: pode ser o que tem no folder não mudou nada
-
-
-
-// OUTSOURCING CONTÁBIL FISCAL E CONTABILIDADE GERENCIAL
-//
-
-//
-
-
-// MANTEMOS EQUIPES ALTAMENTE TREINADAS E ATUALIZADAS PARA ATENDIMENTO AO CLIENTE
