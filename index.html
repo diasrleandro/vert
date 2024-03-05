@@ -57,7 +57,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-bordo">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
-					<img height="50px" src="images/logo-seo.png" alt="" />
+					<img height="40px" src="images/logo-seo.png" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-seo"
 					aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -410,17 +410,13 @@
 										d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A;	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
 										fill="#FFFFFF"></path>
 								</svg>
-								<div class="pricing-price"><span class="pricing-currency">$</span>32
-									<span class="pricing-period">/ mo</span>
+								<div class="pricing-price"><span class="pricing-currency">R$</span>33
+									<span class="pricing-period">/mês</span>
 								</div>
-								<h3 class="pricing-title">Freelance</h3>
+								<h3 class="pricing-title"></h3>
 							</div>
-							<ul class="pricing-feature-list">
-								<li class="pricing-feature">1 GB of space</li>
-								<li class="pricing-feature">Support at $25/hour</li>
-								<li class="pricing-feature">Limited cloud access</li>
-							</ul>
-							<button class="bttn-new-a">Choose plan</button>
+							<p></p>
+							<button class="bttn-new-a">Escolha o Plano</button>
 						</div>
 						<div class="pricing-item pricing__item--featured">
 							<div class="pricing-deco">
@@ -442,17 +438,13 @@
 										d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A;	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
 										fill="#FFFFFF"></path>
 								</svg>
-								<div class="pricing-price"><span class="pricing-currency">$</span>45
-									<span class="pricing-period">/ mo</span>
+								<div class="pricing-price"><span class="pricing-currency">R$</span>44
+									<span class="pricing-period">/mês</span>
 								</div>
 								<h3 class="pricing-title">Business</h3>
 							</div>
-							<ul class="pricing-feature-list">
-								<li class="pricing-feature">5 GB of space</li>
-								<li class="pricing-feature">Support at $5/hour</li>
-								<li class="pricing-feature">Full cloud access</li>
-							</ul>
-							<button class="bttn-new-a">Choose plan</button>
+							<p></p>
+							<button class="bttn-new-a">Escolha o Plano</button>
 						</div>
 						<div class="pricing-item">
 							<div class="pricing-deco">
@@ -474,17 +466,13 @@
 										d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428&#x000A;	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
 										fill="#FFFFFF"></path>
 								</svg>
-								<div class="pricing-price"><span class="pricing-currency">$</span>80
-									<span class="pricing-period">/ mo</span>
+								<div class="pricing-price"><span class="pricing-currency">R$</span>55
+									<span class="pricing-period">/mês</span>
 								</div>
 								<h3 class="pricing-title">Enterprise</h3>
 							</div>
-							<ul class="pricing-feature-list">
-								<li class="pricing-feature">10 GB of space</li>
-								<li class="pricing-feature">Support at $5/hour</li>
-								<li class="pricing-feature">Full cloud access</li>
-							</ul>
-							<button class="bttn-new-a">Choose plan</button>
+							<p></p>
+							<button class="bttn-new-a">Escolha o Plano</button>
 						</div>
 					</div>
 				</div><!-- end col -->
@@ -495,7 +483,7 @@
 	<div id="testimonials" class="section wb">
 		<div class="container">
 			<div class="section-title text-center">
-				<h3 class="text-color-bordo">Funcionário PJ </h3>
+				<h3 class="text-color-bordo">Funcionário PJ 2</h3>
 				<p class="lead">Temos uma equipe especializa e um plano incrível para vc abrir sua empresa, sem dor de
 					cabeça .......eds of our happy customers! <br>Let's see what others say about Landigoo website
 					template!</p>
@@ -873,7 +861,15 @@
 
 			});
 
+			$('.pricing-item').each(function (index) {
+				var h3Content1 = precos[index].h3;
+				var pContent1 = precos[index].p;
+				$(this).find('h3').html(h3Content1);
+				$(this).find('p').html(pContent1);
 
+			});
+
+			
 
 		});
 	</script>

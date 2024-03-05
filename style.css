@@ -67,7 +67,7 @@ body.demos .section-title img {
 
 body.demos .service-widget h3 {
     border-bottom: 1px solid #ededed;
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px 0;
     background-color: #ffffff;
 }
@@ -1232,10 +1232,10 @@ body.seo_version .btn-light.ban-btn{
   }
 }
 .pricing-palden .pricing-deco {
-  border-radius: 5px 5px 0 0;
-  background: #6b2332;
-  padding: 4em 0 9em;
-  position: relative;
+    border-radius: 5px 5px 0 0;
+    background: #6b2332;
+    padding: 2em 0 7em;
+    position: relative;
 }
 .pricing-palden .pricing-deco-img {
   position: absolute;
@@ -1460,7 +1460,7 @@ button.bttn-new-a:focus {
 -------------------------------------------------------------------*/
 
 .service-widget h3 {
-    font-size: 21px;
+    font-size: 18px;
     color: #ffffff;
     padding: 0;
     margin: 0;
@@ -2885,4 +2885,14 @@ nav ul, li, ol {
 .navbar-nav li{
     font-size: 12px !important;
     padding: 0 !important;
+}
+
+
+.pricing-palden .pricing-price h6{
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0;
+    color: #fff;
+    margin: 0 0 0.25em 0;
+    line-height: 0.75;
 }

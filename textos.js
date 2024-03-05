@@ -143,6 +143,32 @@ var produtosServicos = [
 
 ];
 
+
+
+var planosTitulo = [
+    {
+        h3: "Um plano ideal para sua necessidade",
+        p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tincidunt risus, vitae sollicitudin        tellus. Sed a nulla nisl. Aenean a lacus eget nibh dignissim molestie in quis magna. Sed vel euismod         ligula. Mauris"
+    }
+];
+
+var precos = [
+    {
+        h3: "Business",
+        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>8 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
+
+    },
+    {
+        h3: "Business II",
+        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
+    },
+    {
+        h3: "Business II",
+        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
+    },
+];
+
+
 // [13:32, 01/03/2024] Vert Consulting Monica: Serviços oferecidos: pode ser o que tem no folder não mudou nada
 
 
