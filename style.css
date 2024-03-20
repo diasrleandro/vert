@@ -617,7 +617,7 @@ a img.aligncenter {
 .sl-content::before{
 	content: "";
 	position: absolute;
-	background: rgba(0,0,0,0.5);
+	/* // background: rgba(0,0,0,0.5); */
 	height: 100%;
 	width: 100%;
 	left: 0px;
@@ -2251,7 +2251,7 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+   
 }
 
 .footer {
@@ -2597,7 +2597,7 @@ body.seo_version .footer-links a:hover{
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
