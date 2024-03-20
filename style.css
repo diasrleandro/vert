@@ -328,7 +328,7 @@ a img.aligncenter {
   width: 100%;
   height: 100%;
   z-index: 100;
-  background-color: #6b2332;
+  background-color: #4b0816;
 }
 
 .loader-wrapper .text {
@@ -845,7 +845,7 @@ body.seo_version .btn-light.ban-btn{
 }
 
 .progress-bar-success{
-	background: #6b2332;
+	background: #4b0816;
 	box-shadow: none;
 }
 
@@ -869,7 +869,7 @@ body.seo_version .btn-light.ban-btn{
 
 .vission-and-mission .nav-pills > li > a.active {
     border: none;
-    background: #6b2332;
+    background: #4b0816;
     color: #ffffff;
 }
 
@@ -1022,7 +1022,7 @@ body.seo_version .btn-light.ban-btn{
 }
 
 .da-thumbs .pitem a div i {
-    background-color: #6b2332;
+    background-color: #4b0816;
     position: absolute;
     color: #ffffff;
     bottom: 0;
@@ -1080,7 +1080,7 @@ body.seo_version .btn-light.ban-btn{
 .desc {
     padding: 30px;
     position: relative;
-    background: #6b2332;
+    background: #4b0816;
     border: 5px solid #ee902f;
 }
 
@@ -1165,7 +1165,7 @@ body.seo_version .btn-light.ban-btn{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #6b2332;
+	background: #4b0816;
 	top: 0px;
 	left: 0px;
 }
@@ -1234,7 +1234,7 @@ body.seo_version .btn-light.ban-btn{
 }
 .pricing-palden .pricing-deco {
     border-radius: 5px 5px 0 0;
-    background: #6b2332;
+    background: #4b0816;
     padding: 2em 0 4em;
     position: relative;
 }
@@ -1305,7 +1305,7 @@ body.seo_version .btn-light.ban-btn{
   color: #fff;
   cursor: pointer;
   border-radius: 30px;
-  background: #6b2332;
+  background: #4b0816;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
@@ -1341,7 +1341,7 @@ button.bttn-new-a:focus {
   width: 250px;
   font-weight: 600;
   padding: 10px 0px;
-  border: 3px solid #6b2332;
+  border: 3px solid #4b0816;
   border-radius: 1px;
   position: relative;
   margin: 0 auto;
@@ -1357,7 +1357,7 @@ button.bttn-new-a:focus {
   bottom: 0;
   opacity: 0;
   content: '';
-  background-color: #6b2332;
+  background-color: #4b0816;
   z-index: -2;
 }
 .bttn-new-a:hover:before {
@@ -1524,7 +1524,7 @@ button.bttn-new-a:focus {
 .post-media {
     padding-top: 10px;
     position: relative;
-    background-color: #6b2332;
+    background-color: #4b0816;
     height: 70px;
     color: white;
     text-align: center;
@@ -2278,7 +2278,7 @@ select.mobile-device {
 }
 
 .footer .widget-title h3 {
-    color: #6b2332;
+    color: #4b0816;
     font-weight: 500;
     font-size: 21px;
     padding: 0;
@@ -2340,11 +2340,11 @@ select.mobile-device {
 }
 
 body.seo_version .footer-links a:hover{
-	color: #6b2332;
+	color: #4b0816;
 }
 .footer-links a:hover,
 .footer a:hover {
-    color: #6b2332;
+    color: #4b0816;
 }
 
 .footer-links li {
@@ -2462,7 +2462,7 @@ body.seo_version .footer-links a:hover{
 }
 
 .footer-distributed .footer-company-name a:hover{
-	color: #6b2332;
+	color: #4b0816;
 }
 
 
@@ -2512,19 +2512,19 @@ body.seo_version .footer-links a:hover{
 }
 
 .social-md li a.fb:hover{
-	background: #6b2332;
+	background: #4b0816;
 }
 .social-md li a.gi:hover{
-	background: #6b2332;
+	background: #4b0816;
 }
 .social-md li a.tw:hover{
-	background: #6b2332;
+	background: #4b0816;
 }
 .social-md li a.dr:hover{
-	background: #6b2332;
+	background: #4b0816;
 }
 .social-md li a.pi:hover{
-	background: #6b2332;
+	background: #4b0816;
 }
 
 
@@ -2673,7 +2673,7 @@ body.seo_version .footer-links a:hover{
 
 .all-page-title{
 	background-size: cover;
-	background-color: #6b2332;
+	background-color: #4b0816;
 	background-repeat: no-repeat;
 	padding: 160px 0px 110px 0px;
 	background-position: center bottom;
@@ -2757,14 +2757,14 @@ body.seo_version .footer-links a:hover{
 }
 
 .process-accordion .card.active .card-header{
-	background: #6b2332;
+	background: #4b0816;
 }
 .process-accordion .card.active .card-header h5 a{
 	color: #ffffff;
 }
 
 .process-accordion .card-header h5 a:hover{
-	background: #6b2332;
+	background: #4b0816;
 	color: #ffffff;
 }
 
@@ -2792,7 +2792,7 @@ body.seo_version .footer-links a:hover{
 }
 
 .inner-acc ul li:hover{
-	background: #6b2332;
+	background: #4b0816;
 	color: #ffffff;
 }
 
@@ -2849,7 +2849,7 @@ body.seo_version .footer-links a:hover{
 
 
 .bg-bordo{
-    background-color: #6b2332;
+    background-color: #4b0816;
     border-bottom: 3px solid #FDB931;
 }
 
@@ -2863,7 +2863,7 @@ body.seo_version .footer-links a:hover{
 
 
 .text-color-bordo{
-    color: #6b2332;
+    color: #4b0816;
 }
 
 .sl-slide-inner h2 {
@@ -2871,7 +2871,7 @@ body.seo_version .footer-links a:hover{
 }
 
 .borderImg{
-    border: 3px solid #6b2332;
+    border: 3px solid #4b0816;
 }
 
 nav ul, li, ol {

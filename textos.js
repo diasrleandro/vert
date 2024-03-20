@@ -150,15 +150,15 @@ var planosTitulo = [
 var precos = [
     {
         h3: "Business",
-        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>8 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
+        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'> 8 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
 
     },
     {
         h3: "Business II",
-        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
+        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'> 1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
     },
     {
         h3: "Business II",
-        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'>1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
+        p: "<ul class='pricing-feature-list'>        <li class='pricing-feature'> 1 GB of space</li>        <li class='pricing-feature'>Support at $25/hour</li>        <li class='pricing-feature'>Limited cloud access</li>    </ul>        "
     },
 ];
