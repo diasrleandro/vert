@@ -14,10 +14,12 @@ $d = filter_input_array(INPUT_POST);
 //se a operação for gravar entra nessa condição
 if(isset($_POST['cadastrar'])){
 
-
-    $usuario->setTag($d['tag']);
-    $usuario->setText($d['text']);
-    $usuario->setText($d['title']);
+    $usuario->setTitle($d['title']);
+    $usuario->setTag1($d['tag1']);
+    $usuario->setContent1($d['content1']);
+    $usuario->setTag2($d['tag2']);
+    $usuario->setContent2($d['content2']);
+    $usuario->setDisplay($d['display']);
 
 
     $usuariodao->create($usuario);
@@ -29,9 +31,12 @@ else if(isset($_POST['editar'])){
 
     
     $usuario->setId($d['id']);
-    $usuario->setTag($d['tag']);
-    $usuario->setText($d['text']);
-    $usuario->setText($d['title']);
+    $usuario->setTag1($d['tag1']);
+    $usuario->setTag2($d['tag2']);
+    $usuario->setContent1($d['content1']);
+    $usuario->setContent2($d['content2']);
+
+    $usuario->setDisplay($d['display']);
 
     $usuariodao->update($usuario);
 

@@ -7,14 +7,17 @@ class UsuarioDAO{
     public function create(Usuario $usuario) {
         try {
             $sql = "INSERT INTO site (                   
-                  tag,text,title)
+                  title,tag1,content1,tag2,content2,display)
                   VALUES (
-                  :tag,:text,:title";
+                  :title,:tag1,:content1,:tag2,:content2,:display";
 
             $p_sql = Conexao::getConexao()->prepare($sql);
-            $p_sql->bindValue(":tag", $usuario->getTag());
-            $p_sql->bindValue(":text", $usuario->getText());
             $p_sql->bindValue(":title", $usuario->getTitle());
+            $p_sql->bindValue(":tag1", $usuario->getTag1());
+            $p_sql->bindValue(":tag2", $usuario->getTag2());
+            $p_sql->bindValue(":content1", $usuario->getContent1());
+            $p_sql->bindValue(":content2", $usuario->getContent2());
+            $p_sql->bindValue(":display", $usuario->getDisplay());
 
             
             return $p_sql->execute();
@@ -25,7 +28,7 @@ class UsuarioDAO{
 
     public function read() {
         try {
-            $sql = "SELECT * FROM site order by id asc";
+            $sql = "SELECT * FROM site where template = 1 order by id asc";
             $result = Conexao::getConexao()->query($sql);
             $lista = $result->fetchAll(PDO::FETCH_ASSOC);
             $f_lista = array();
@@ -42,14 +45,19 @@ class UsuarioDAO{
         try {
             $sql = "UPDATE site set
                 
-                  tag=:tag,
-                  text=:text          
+                  tag1=:tag1,
+                  tag2=:tag2,
+                  content1=:content1,
+                  content2=:content2,
+                  display=:display         
                                                                        
                   WHERE id = :id";
             $p_sql = Conexao::getConexao()->prepare($sql);
-            $p_sql->bindValue(":tag", $usuario->getTag());
-            $p_sql->bindValue(":text", $usuario->getText());
-            $p_sql->bindValue(":title", $usuario->getTitle());
+            $p_sql->bindValue(":tag1", $usuario->getTag1());
+            $p_sql->bindValue(":tag2", $usuario->getTag2());
+            $p_sql->bindValue(":content1", $usuario->getContent1());
+            $p_sql->bindValue(":content1", $usuario->getContent1());
+            
             $p_sql->bindValue(":id", $usuario->getId());
             return $p_sql->execute();
         } catch (Exception $e) {
@@ -74,9 +82,11 @@ class UsuarioDAO{
     private function listaUsuarios($row) {
         $usuario = new Usuario();
         $usuario->setId($row['id']);
-        $usuario->setTag($row['tag']);
-        $usuario->setTitle($row['title']);
-        $usuario->setText($row['text']);
+        $usuario->setTag1($row['tag1']);
+        $usuario->setContent1($row['content1']);
+        $usuario->setTag2($row['tag2']);
+        $usuario->setContent2($row['content2']);
+        $usuario->setDisplay($row['display']);
 
         return $usuario;
     }

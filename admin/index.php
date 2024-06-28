@@ -33,29 +33,44 @@ $usuariodao = new UsuarioDAO();
     <nav class="navbar navbar-light bg-light menu">
         <div class="container">
             <a class="navbar-brand" href="#">
-                CRUD PHP POO
+                :: ADMINISTRATIVO - SITE VERT ::
             </a>
         </div>
     </nav>
     <div class="container">
         <form action="app/controller/UsuarioController.php" method="POST">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <label>id</label>
                     <input type="text" name="id" value="" autofocus class="form-control" require />
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-10">
                     <label>Title</label>
                     <input type="text" name="title" value="" class="form-control" require />
                 </div>
-                <div class="col-md-5">
-                    <label>Tag</label>
-                    <input type="text" name="tag" value="" class="form-control" require />
-                </div>
                 <div class="col-md-2">
-                    <label>Text</label>
-                    <input type="number" name="text" value="" class="form-control" require />
+                    <label>Tag</label>
+                    <input type="text" name="tag1" value="" class="form-control" require />
                 </div>
+                <div class="col-md-10">
+                    <label>Conteúdo Tag 1</label>
+                    <input type="number" name="content1" value="" class="form-control" require />
+                </div>
+
+                <div class="col-md-2">
+                    <label>Tag 2</label>
+                    <input type="text" name="tag2" value="" class="form-control" require />
+                </div>
+                <div class="col-md-10">
+                    <label>Conteúdo Tag 2</label>
+                    <input type="number" name="content2" value="" class="form-control" require />
+                </div>
+
+                <div class="col-md-2">
+                    <label>Display</label>
+                    <input type="text" name="display" value="" class="form-control" require />
+                </div>
+
 
                 <div class="col-md-2">
                     <br>
@@ -71,7 +86,10 @@ $usuariodao = new UsuarioDAO();
                         <th>Id</th>
                         <th>Title</th>
                         <th>Tag</th>
-                        <th>Text</th>
+                        <th>Conteudo</th>
+                        <th>Tag2</th>
+                        <th>Conteudo2</th>
+                        <th>Display</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -80,8 +98,12 @@ $usuariodao = new UsuarioDAO();
                     <tr>
                         <td><?= $usuario->getId() ?></td>
                         <td><?= $usuario->getTitle() ?></td>
-                        <td><?= $usuario->getTag() ?></td>
-                        <td><?= $usuario->getText() ?></td>
+                        <td><?= $usuario->getTag1() ?></td>
+                        <td><?= $usuario->getContent1() ?></td>
+
+                        <td><?= $usuario->getTag2() ?></td>
+                        <td><?= $usuario->getContent2() ?></td>
+                        <td><?= $usuario->getDisplay() ?></td>
 
                         <td class="text-center">
                             <button class="btn  btn-warning btn-sm" data-toggle="modal"
@@ -113,25 +135,39 @@ $usuariodao = new UsuarioDAO();
                                                     class="form-control" require />
                                             </div>
                                             <div class="col-md-5">
-                                                <label>Tag</label>
-                                                <input type="text" name="nome" value="<?= $usuario->getTag() ?>"
+                                                <label>Tag 1 </label>
+                                                <input type="text" name="nome" value="<?= $usuario->getTag1() ?>"
                                                     class="form-control" require />
                                             </div>
                                             <div class="col-md-7">
-                                                <label>Text</label>
-                                                <input type="text" name="tag" value="<?= $usuario->getText() ?>"
+                                                <label>Conteudo 1</label>
+                                                <input type="text" name="tag" value="<?= $usuario->getContent1() ?>"
                                                     class="form-control" require />
                                             </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <br>
-                                                <input type="hidden" name="id" value="<?= $usuario->getId() ?>" />
-                                                <button class="btn btn-primary" type="submit"
-                                                    name="editar">Cadastrar</button>
+                                            <div class="col-md-5">
+                                                <label>Tag 2 </label>
+                                                <input type="text" name="nome" value="<?= $usuario->getTag2() ?>"
+                                                    class="form-control" require />
                                             </div>
-                                        </div>
+                                            <div class="col-md-7">
+                                                <label>Conteudo 2</label>
+                                                <input type="text" name="tag" value="<?= $usuario->getContent2() ?>"
+                                                    class="form-control" require />
+                                            </div>
+                                            <div class="col-md-7">
+                                                <label>Display</label>
+                                                <input type="text" name="tag" value="<?= $usuario->getDisplay() ?>"
+                                                    class="form-control" require />
+                                            </div>iv>
+
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <br>
+                                                    <input type="hidden" name="id" value="<?= $usuario->getId() ?>" />
+                                                    <button class="btn btn-primary" type="submit"
+                                                        name="editar">Cadastrar</button>
+                                                </div>
+                                            </div>
                                     </form>
                                 </div>
 

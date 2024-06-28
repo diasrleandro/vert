@@ -66,11 +66,14 @@
 				<div class="collapse navbar-collapse" id="navbars-seo">
 					<ul class="navbar-nav ml-auto">
 						<li style=" list-style: none;" class="nav-item active">
-								<a class="nav-link" href="#">Home</a></li>
+							<a class="nav-link" href="#">Home</a>
+						</li>
 						<li style=" list-style: none;" class="nav-item">
-								<a class="nav-link" href="#">Sobre Nós</a></li>
-						<li style=" list-style: none;"  class="nav-item">
-								<a class="nav-link" href="#">Principais Produtos</a></li>
+							<a class="nav-link" href="#">Sobre Nós</a>
+						</li>
+						<li style=" list-style: none;" class="nav-item">
+							<a class="nav-link" href="#">Principais Produtos</a>
+						</li>
 						<!-- <li style=" list-style: none;" class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Services
 							</a>
@@ -188,8 +191,10 @@
 			<div style="display: none;" class="row vission-and-mission">
 				<div class="col-md-12">
 					<ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
-						<li class="nav-item"  style=" list-style: none;"><a class="nav-link active" href="#tab_a" data-toggle="tab">Missão</a></li>
-						<li class="nav-item"  style=" list-style: none;"><a class="nav-link" href="#tab_b" data-toggle="tab">Valores</a></li>
+						<li class="nav-item" style=" list-style: none;"><a class="nav-link active" href="#tab_a"
+								data-toggle="tab">Missão</a></li>
+						<li class="nav-item" style=" list-style: none;"><a class="nav-link" href="#tab_b"
+								data-toggle="tab">Valores</a></li>
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane fade show active" id="tab_a">
@@ -202,7 +207,7 @@
 						</div>
 						<div class="tab-pane fade" id="tab_b">
 							<div class="box-inner-m">
-teste
+								teste
 							</div>
 						</div>
 					</div>
@@ -248,7 +253,7 @@ teste
 
 				<div class="col-md-6 col-xs-12 divProdutosDestaque ">
 					<div class="why-dit">
-												<h4 class="text-color-bordo"></h4>
+						<h4 class="text-color-bordo">OutSourcing</h4>
 						<h5></h5>
 						<p></p>
 					</div>
@@ -835,11 +840,11 @@ teste
 
 			$('.divProdutosDestaque').each(function (index) {
 				var pContent = produtosDestaque[index].p;
-				var h4Content = produtosDestaque[index].h4;
+
 				var h5Content = produtosDestaque[index].h5;
 
 				$(this).find('p').html(pContent);
-				$(this).find('h4').html(h4Content);
+
 				$(this).find('h5').html(h5Content);
 
 			});
@@ -870,7 +875,7 @@ teste
 
 			});
 
-			
+
 
 		});
 	</script>
