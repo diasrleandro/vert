@@ -1,13 +1,3 @@
-<?php
-
-include("./adminstrativo/config.php");
-
-
-$sql = "SELECT * FROM site";
-$res = $conn->query($sql);
-$qtd = $res->num_rows;
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -48,6 +38,17 @@ $qtd = $res->num_rows;
 </head>
 
 <body class="seo_version">
+
+    <?php
+
+include("config.php");
+
+
+$sql = "SELECT * FROM site";
+$res = $conn->query($sql);
+$qtd = $res->num_rows;
+?>
+
     <script src="textos.js"></script>
     <!-- LOADER -->
     <div id="preloader">
