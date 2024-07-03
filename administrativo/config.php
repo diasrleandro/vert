@@ -1,5 +1,5 @@
 <?php
-define('HOST', 'admin/app/conexao/Conexao.php');
+define('HOST', 'vertidb');
 define('USER', 'vert');
 define('PASS', 'Contabilidade@de16');
 define('BASE', 'adminvert1');
