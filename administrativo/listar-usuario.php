@@ -6,6 +6,8 @@ $res = $conn->query($sql);
 
 $qtd = $res->num_rows;
 
+// Array JavaScript vazio para armazenar os dados
+$javascriptArray = [];
 
 if ($qtd > 0) {
     print "<table class='table table-hover table-striped table-bordered'>";
@@ -55,14 +57,15 @@ if ($qtd > 0) {
                 
     }
     print "</table>";
+
+        // Incluir o script JavaScript dentro do bloco PHP após o preenchimento do array
+        echo "<script>";
+        echo "var dataFromPHP = " . json_encode($javascriptArray) . ";";
+        echo "console.log(dataFromPHP);"; // Exemplo de como você pode usar os dados em JavaScript
+        echo "</script>";
+
+        
 } else {
 print "<p class='alert alert-danger'>Não encontrou resultados</p>";
 }
 ?>
-
-<!-- Script JavaScript -->
-<script>
-// Exemplo de uso do array JavaScript preenchido pelo PHP
-var dataFromPHP = <?php echo json_encode($javascriptArray); ?>;
-console.log(dataFromPHP); // Exemplo de como você pode usar os dados em JavaScript
-</script>
