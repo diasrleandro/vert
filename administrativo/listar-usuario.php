@@ -5,7 +5,7 @@ $sql = "SELECT * FROM site";
 $res = $conn->query($sql);
 
 $qtd = $res->num_rows;
-
+print $res ;
 
 
 if ($qtd > 0) {
