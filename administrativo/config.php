@@ -1,8 +1,8 @@
 <?php
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASS', '');
-define('BASE', 'cadastro');
+define('HOST', 'admin/app/conexao/Conexao.php');
+define('USER', 'vert');
+define('PASS', 'Contabilidade@de16');
+define('BASE', 'adminvert1');
 
 $conn = new mysqli(HOST, USER, PASS, BASE);
 
