@@ -130,7 +130,7 @@ $qtd = $res->num_rows;
  					    ?>
                         <p>
                         </p>
-                        <a href="#" class="bttn-new">Fale Conosco</a>
+                        <a href="#" class="bttn-new">Fale Conosco1</a>
                     </blockquote>
                 </div>
             </div>
