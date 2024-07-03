@@ -1,5 +1,5 @@
 <?php
-define('HOST', 'vertidb');
+define('HOST', 'adminvert1.mysql.uhserver.com');
 define('USER', 'vert');
 define('PASS', 'Contabilidade@de16');
 define('BASE', 'adminvert1');
