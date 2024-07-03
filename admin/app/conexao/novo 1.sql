@@ -1,3 +1,6 @@
+
+
+
 INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `display`, `template`) VALUES (1,'diferenciais','h2','O que podemos fazer pela sua empresa hoje?','p','A Vert Consulting oferece oferece produtos aos nossos clientes com excelência e sólidos subsídios técnicos de suporte aos processos decisórios para que possam dedicar-se 	exclusivamente ao desenvolvimento de sua empresa.','block','1');
 
 INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `display`, `template`) VALUES (2,'diferenciais','h2','Capacitação dos recursos internos dos clientes nas áreas financeira, fiscal e trabalhista','p','Etiam felis elit, mollis posuere ','block','1');
@@ -68,18 +71,8 @@ INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `displ
 
 INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `display`, `template`) VALUES (26,'planosTitulo','h3','Um plano ideal para sua necessidade','p','lorem','block','1');
 
-
-
-
-
-
 INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `display`, `template`) VALUES (27,'precos','h3','Business','p','<ul class="pricing-feature-list">        <li class="pricing-feature"> 8 GB of space</li>        <li class="pricing-feature">Support at $25/hour</li>        <li class="pricing-feature">Limited cloud access</li>    </ul> ','block','1');
-
-
 INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `display`, `template`) VALUES (28,'precos','h3','Business II','p','<ul class="pricing-feature-list">        <li class="pricing-feature"> 1 GB of space</li>        <li class="pricing-feature">Support at $25/hour</li>        <li class="pricing-feature">Limited cloud access</li>    </ul>','block','1');
-
-
-
 INSERT INTO `site`(`id`, `title`, `tag1`, `content1`, `tag2`, `content2`, `display`, `template`) VALUES (29,'precos','h3','Business III','p','<ul class="pricing-feature-list">        <li class="pricing-feature"> 1 GB of space</li>        <li class="pricing-feature">Support at $25/hour</li>        <li class="pricing-feature">Limited cloud access</li>    </ul>','block','1');
 
 

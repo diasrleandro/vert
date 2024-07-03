@@ -1,0 +1,9 @@
+{
+    "name": "super/vert",
+    "autoload": {
+        "psr-4": {
+            "Super\\Vert\\": "src/"
+        }
+    },
+    "require": {}
+}
