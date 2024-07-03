@@ -47,6 +47,9 @@ include("config.php");
 $sql = "SELECT * FROM site";
 $res = $conn->query($sql);
 $qtd = $res->num_rows;
+
+$textos = $res->fetch_all(MYSQLI_ASSOC);
+
 ?>
 
     <script src="textos.js"></script>
@@ -58,7 +61,7 @@ $qtd = $res->num_rows;
                 <div class="ball"></div>
                 <div class="ball"></div>
             </div>
-            <div class="text">LOADING..p.</div>
+            <div class="text">LOADING...</div>
         </div>
     </div>
     <!-- END LOADER -->
@@ -123,19 +126,22 @@ $qtd = $res->num_rows;
                 data-slice1-scale="2" data-slice2-scale="2">
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-1"></div>
-                    <h2></h2>
-                    <blockquote>
+                    <h2>
                         <?php 
-							  while ($row = $res->fetch_object()) {
-								if ($row->id == 1){
-									
-									echo $row->content1 ;
-								}
-							  }
- 					    ?>
+						
+						while ($row = $res->fetch_object()) {
+							if ($row->id == 1){
+								
+								echo $row->content1 ;
+							}
+						}
+						?>
+                    </h2>
+                    <blockquote>
                         <p>
+                            <?php 	$textos[0].['content1']; ?>
                         </p>
-                        <a href="#" class="bttn-new">Fale Conosco1</a>
+                        <a href="#" class="bttn-new">Fale Conosco3</a>
                     </blockquote>
                 </div>
             </div>
