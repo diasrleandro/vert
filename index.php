@@ -1,4 +1,8 @@
 <?php
+
+include("./adminstrativo/config.php");
+
+
 $sql = "SELECT * FROM site";
 $res = $conn->query($sql);
 $qtd = $res->num_rows;
