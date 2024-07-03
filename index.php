@@ -53,7 +53,7 @@ $qtd = $res->num_rows;
                 <div class="ball"></div>
                 <div class="ball"></div>
             </div>
-            <div class="text">LOADING...</div>
+            <div class="text">LOADING..p.</div>
         </div>
     </div>
     <!-- END LOADER -->
@@ -120,12 +120,15 @@ $qtd = $res->num_rows;
                     <div class="bg-img bg-img-1"></div>
                     <h2></h2>
                     <blockquote>
-                        <p>
-                            <?php 
+                        <?php 
 							  while ($row = $res->fetch_object()) {
-								echo $row->id ;
+								if ($row->id == 1){
+									
+									echo $row->content1 ;
+								}
 							  }
-							?>
+ 					    ?>
+                        <p>
                         </p>
                         <a href="#" class="bttn-new">Fale Conosco</a>
                     </blockquote>
