@@ -158,7 +158,7 @@ $usuariodao = new UsuarioDAO();
                                                 <label>Display</label>
                                                 <input type="text" name="tag" value="<?= $usuario->getDisplay() ?>"
                                                     class="form-control" require />
-                                            </div>iv>
+                                            </div>
 
                                             <div class="row">
                                                 <div class="col-md-2">
