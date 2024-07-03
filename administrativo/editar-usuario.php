@@ -1,20 +1,20 @@
 <h1>Editar Registro</h1>
 <?php
-    $sql = "SELECT * FROM registros WHERE id=".$_REQUEST["id"];
+    $sql = "SELECT * FROM site WHERE id=".$_REQUEST["id"];
     $res = $conn->query($sql);
     $row = $res->fetch_object();
 ?>
 <form action="?page=salvar" method="post">
     <div class="mb-3">
         <input type="hidden" name="acao" value="editar">
-        <input type="hidden" name="id"  value="<?php print $row->id; ?>">
+        <input type="hidden" name="id" value="<?php print $row->id; ?>">
 
         <label for="title" class="form-label">Título</label>
         <input type="text" class="form-control" id="title" value="<?php print $row->title; ?>" name="title">
     </div>
     <div class="mb-3">
         <label for="tag1" class="form-label">Tag 1</label>
-        <input type="text" class="form-control" id="tag1" value="<?php print $row->tag1; ?>" name="tag1" >
+        <input type="text" class="form-control" id="tag1" value="<?php print $row->tag1; ?>" name="tag1">
     </div>
     <div class="mb-3">
         <label for="content1" class="form-label">Conteúdo 1</label>

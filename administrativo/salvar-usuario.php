@@ -18,7 +18,7 @@
             $display = $conn->real_escape_string($display);
             $template = $conn->real_escape_string($template);
 
-            $sql = "INSERT INTO registros (title, tag1, content1, tag2, content2, display, template) VALUES ('$title', '$tag1', '$content1', '$tag2', '$content2', '$display', '$template')";
+            $sql = "INSERT INTO site (title, tag1, content1, tag2, content2, display, template) VALUES ('$title', '$tag1', '$content1', '$tag2', '$content2', '$display', '$template')";
             $res = $conn->query($sql);
 
             if($res == true){
@@ -50,7 +50,7 @@
             $display = $conn->real_escape_string($display);
             $template = $conn->real_escape_string($template);
 
-            $sql = "UPDATE registros SET
+            $sql = "UPDATE site SET
                         title='$title',
                         tag1='$tag1',
                         content1='$content1',
@@ -74,7 +74,7 @@
         case 'excluir':
             $id = $_REQUEST["id"];
 
-            $sql = "DELETE FROM registros WHERE id=$id";
+            $sql = "DELETE FROM site WHERE id=$id";
 
             $res = $conn->query($sql);
             if($res == true){
