@@ -1,7 +1,7 @@
 <?php
 define('HOST', 'adminvert1.mysql.uhserver.com');
 define('USER', 'vert');
-define('PASS', 'Contabilidade@de16');
+define('PASS', 'Contabilid@de16');
 define('BASE', 'adminvert1');
 
 $conn = new mysqli(HOST, USER, PASS, BASE);
