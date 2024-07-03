@@ -1,6 +1,6 @@
 <h1>Listar Registros</h1>
 <?php
-$sql = "SELECT * FROM registros";
+$sql = "SELECT * FROM site";
 
 $res = $conn->query($sql);
 
