@@ -127,19 +127,11 @@ $textos = $res->fetch_all(MYSQLI_ASSOC);
                 <div class="sl-slide-inner">
                     <div class="bg-img bg-img-1"></div>
                     <h2>
-                        <?php 
-						
-						while ($row = $res->fetch_object()) {
-							if ($row->id == 1){
-								
-								echo $row->content1 ;
-							}
-						}
-						?>
+                        <?php 	$textos[0].['content2']; ?>
                     </h2>
                     <blockquote>
                         <p>
-                            <?php 	$textos[0].['content1']; ?>
+                            <?php 	$textos[0].['content2']; ?>
                         </p>
                         <a href="#" class="bttn-new">Fale Conosco3</a>
                     </blockquote>
