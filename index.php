@@ -185,7 +185,7 @@
 						<h4></h4>
 						<p> <?php $textos[4] . ['content2']; ?> </p>
 						<h2 class="text-color-bordo"></h2>
-						<p> <?php $textos[4] . ['content1']; ?> </p>
+						<p> <?php $textos[4] . ['content2']; ?> </p>
 						<p></p>
 					</div><!-- end messagebox -->
 				</div><!-- end col -->
@@ -239,7 +239,7 @@
 				<div class="col-md-6 col-xs-12">
 					<div class="why-dit ">
 						<div class="divValores">
-							<p><?php $textos[5] . ['content2']; ?></p>
+							<p></p>
 						</div>
 						<div class="divValores">
 							<p></p>
