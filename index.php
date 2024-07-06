@@ -132,38 +132,9 @@
 				</div>
 			</div>
 
-			<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-				<div class="sl-slide-inner">
-					<div class="bg-img bg-img-2"></div>
-					<h2><?php $textos[1] . ['content1']; ?></h2>
-					<blockquote>
-						<p> <?php $textos[1] . ['content2']; ?> </p>
-						<a href="#" class="bttn-new">Fale Conosco</a>
-					</blockquote>
-				</div>
-			</div>
 
-			<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-				<div class="sl-slide-inner">
-					<div class="bg-img bg-img-3"></div>
-					<h2><?php $textos[2] . ['content1']; ?></h2>
-					<blockquote>
-						<p> <?php $textos[2] . ['content2']; ?> </p>
-						<a href="#" class="bttn-new">Fale Conosco</a>
-					</blockquote>
-				</div>
-			</div>
 
-			<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-				<div class="sl-slide-inner">
-					<div class="bg-img bg-img-4"></div>
-					<h2><?php $textos[3] . ['content1']; ?></h2>
-					<blockquote>
-						<p> <?php $textos[3] . ['content2']; ?> </p>
-						<a href="#" class="bttn-new">Fale Conosco</a>
-					</blockquote>
-				</div>
-			</div>
+
 
 		</div><!-- /sl-slider -->
 
