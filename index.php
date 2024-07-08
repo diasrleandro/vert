@@ -124,29 +124,25 @@
 			<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 				<div class="sl-slide-inner">
 
-					<div class="bg-img bg-img-1"></div>
-					<h2>
-					</h2>
-
-					<blockquote>
-						<p>
-							<?php
-							while ($row = $res->fetch_object()) {
-								print $row->content1;
-							}
-							?>
-						</p>
-						<a href="#" class="bttn-new">Fale Conosco3</a>
-					</blockquote>
+					<?php
+					while ($row = $res->fetch_object()) {
+						if ($row->id == 0) {
+							print '	<div class="bg-img bg-img-1"></div>
+											<h2>' . $row->content1 . '</h2>   <blockquote>  <p> '
+								. $row->content2 . ' </p>                    <a href="#" class="bttn-new">Fale Conosco</a>
+                    </blockquote>';
+						}
+					}
+					?>
 				</div>
 			</div>
 
 			<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 				<div class="sl-slide-inner">
 					<div class="bg-img bg-img-2"></div>
-					<h2></h2>
+					<h2><?php $textos[1] . ['content1']; ?></h2>
 					<blockquote>
-						<p></p>
+						<p> <?php $textos[1] . ['content2']; ?> </p>
 						<a href="#" class="bttn-new">Fale Conosco</a>
 					</blockquote>
 				</div>
@@ -155,9 +151,9 @@
 			<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
 				<div class="sl-slide-inner">
 					<div class="bg-img bg-img-3"></div>
-					<h2></h2>
+					<h2><?php $textos[2] . ['content1']; ?></h2>
 					<blockquote>
-						<p></p>
+						<p> <?php $textos[2] . ['content2']; ?> </p>
 						<a href="#" class="bttn-new">Fale Conosco</a>
 					</blockquote>
 				</div>
@@ -166,9 +162,9 @@
 			<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
 				<div class="sl-slide-inner">
 					<div class="bg-img bg-img-4"></div>
-					<h2></h2>
+					<h2><?php $textos[3] . ['content1']; ?></h2>
 					<blockquote>
-						<p></p>
+						<p> <?php $textos[3] . ['content2']; ?> </p>
 						<a href="#" class="bttn-new">Fale Conosco</a>
 					</blockquote>
 				</div>
@@ -190,8 +186,11 @@
 			<div class="row">
 				<div class="col-md-6 m40">
 					<div class="message-box divNossaEmpresa">
+						<p> <?php $textos[4] . ['title']; ?> </p>
 						<h4></h4>
+						<p> <?php $textos[4] . ['content2']; ?> </p>
 						<h2 class="text-color-bordo"></h2>
+						<p> <?php $textos[4] . ['content2']; ?> </p>
 						<p></p>
 					</div><!-- end messagebox -->
 				</div><!-- end col -->
@@ -231,8 +230,8 @@
 			<hr class="hr1">
 
 			<div class="section-title text-center divProdutosTitulo">
-				<h3 class="text-color-bordo"></h3>
-				<h5 class="lead"></h5>
+				<h3 class="text-color-bordo"><?php $textos[11] . ['content1']; ?></h3>
+				<h5 class="lead"><?php $textos[11] . ['content2']; ?></h5>
 			</div><!-- end title -->
 
 			<div class="seo-services row clearfix ">
@@ -748,93 +747,93 @@
 
 
 
-			// Iterar sobre cada slide
-			$('.divNossaEmpresa').each(function(index) {
+			// // Iterar sobre cada slide
+			// $('.divNossaEmpresa').each(function(index) {
 
-				var h4Content = nossaEmpresa[index].h4;
-				var h2Content = nossaEmpresa[index].h2;
-				var pContent = nossaEmpresa[index].p;
+			//     var h4Content = nossaEmpresa[index].h4;
+			//     var h2Content = nossaEmpresa[index].h2;
+			//     var pContent = nossaEmpresa[index].p;
 
-				// Substituir o conteúdo das tags h2 e p
-				$(this).find('h4').html(h4Content);
-				$(this).find('h2').html(h2Content);
-				$(this).find('p').html(pContent);
-			});
+			//     // Substituir o conteúdo das tags h2 e p
+			//     $(this).find('h4').html(h4Content);
+			//     $(this).find('h2').html(h2Content);
+			//     $(this).find('p').html(pContent);
+			// });
 
-			$('.divValores').each(function(index) {
-				try {
-					var pContent = valores[index].p;
-					$(this).find('p').html(pContent);
-				} catch (error) {
+			// $('.divValores').each(function(index) {
+			//     try {
+			//         var pContent = valores[index].p;
+			//         $(this).find('p').html(pContent);
+			//     } catch (error) {
 
-				}
-			});
+			//     }
+			// });
 
-			$('.divVisao').each(function(index) {
-				var pContent = visao[index].p;
-				$(this).find('p').html(pContent);
-			});
+			// $('.divVisao').each(function(index) {
+			//     var pContent = visao[index].p;
+			//     $(this).find('p').html(pContent);
+			// });
 
-			$('.divMissao').each(function(index) {
-				var pContent = missao[index].p;
-				$(this).find('p').html(pContent);
-				console.log(pContent);
-			});
-
-
-			$('.divProdutosTitulo').each(function(index) {
-				var pContent = produtosTitulo[index].h3;
-				var h5Content = produtosTitulo[index].h5;
-				$(this).find('h3').html(pContent);
-				$(this).find('h5').html(h5Content);
-
-			});
+			// $('.divMissao').each(function(index) {
+			//     var pContent = missao[index].p;
+			//     $(this).find('p').html(pContent);
+			//     console.log(pContent);
+			// });
 
 
-			$('.divProdutosTitulo').each(function(index) {
-				var pContent = produtosTitulo[index].h3;
-				var h5Content = produtosTitulo[index].h5;
-				$(this).find('h3').html(pContent);
-				$(this).find('h5').html(h5Content);
+			// $('.divProdutosTitulo').each(function(index) {
+			//     var pContent = produtosTitulo[index].h3;
+			//     var h5Content = produtosTitulo[index].h5;
+			//     $(this).find('h3').html(pContent);
+			//     $(this).find('h5').html(h5Content);
 
-			});
-
-			$('.divProdutosDestaque').each(function(index) {
-				var pContent = produtosDestaque[index].p;
-
-				var h5Content = produtosDestaque[index].h5;
-
-				$(this).find('p').html(pContent);
-
-				$(this).find('h5').html(h5Content);
-
-			});
+			// });
 
 
-			$('.divProdutosServicosTitulo').each(function(index) {
-				var h3Content = produtosServicosTitulo[index].h3;
-				var pContent = produtosServicosTitulo[index].p;
-				$(this).find('h3').html(h3Content);
-				$(this).find('p').html(pContent);
+			// $('.divProdutosTitulo').each(function(index) {
+			//     var pContent = produtosTitulo[index].h3;
+			//     var h5Content = produtosTitulo[index].h5;
+			//     $(this).find('h3').html(pContent);
+			//     $(this).find('h5').html(h5Content);
 
-			});
+			// });
+
+			// $('.divProdutosDestaque').each(function(index) {
+			//     var pContent = produtosDestaque[index].p;
+
+			//     var h5Content = produtosDestaque[index].h5;
+
+			//     $(this).find('p').html(pContent);
+
+			//     $(this).find('h5').html(h5Content);
+
+			// });
 
 
-			$('.divProdutosServicos').each(function(index) {
-				var h3Content1 = produtosServicos[index].h3;
-				var pContent1 = produtosServicos[index].p;
-				$(this).find('h3').html(h3Content1);
-				$(this).find('p').html(pContent1);
+			// $('.divProdutosServicosTitulo').each(function(index) {
+			//     var h3Content = produtosServicosTitulo[index].h3;
+			//     var pContent = produtosServicosTitulo[index].p;
+			//     $(this).find('h3').html(h3Content);
+			//     $(this).find('p').html(pContent);
 
-			});
+			// });
 
-			$('.pricing-item').each(function(index) {
-				var h3Content1 = precos[index].h3;
-				var pContent1 = precos[index].p;
-				$(this).find('h3').html(h3Content1);
-				$(this).find('p').html(pContent1);
 
-			});
+			// $('.divProdutosServicos').each(function(index) {
+			//     var h3Content1 = produtosServicos[index].h3;
+			//     var pContent1 = produtosServicos[index].p;
+			//     $(this).find('h3').html(h3Content1);
+			//     $(this).find('p').html(pContent1);
+
+			// });
+
+			// $('.pricing-item').each(function(index) {
+			//     var h3Content1 = precos[index].h3;
+			//     var pContent1 = precos[index].p;
+			//     $(this).find('h3').html(h3Content1);
+			//     $(this).find('p').html(pContent1);
+
+			// });
 
 
 
