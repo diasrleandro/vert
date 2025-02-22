@@ -1,9 +1,15 @@
-<h1>Editar Registro</h1>
+<h1>Editar Registro2</h1>
 <?php
 $sql = "SELECT * FROM site WHERE id=" . $_REQUEST["id"];
 $res = $conn->query($sql);
 $row = $res->fetch_object();
 ?>
+
+
+
+
+
+
 <form action="?page=salvar" method="post">
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id" value="<?php print $row->id; ?>">
@@ -33,7 +39,8 @@ $row = $res->fetch_object();
 
             <div class="mb-3">
                 <label for="tag1" class="form-label">Tag</label>
-                <input type="text" disabled class="form-control" id="tag1" value="<?php print $row->tag1; ?>" name="tag1">
+                <input type="text" disabled class="form-control" id="tag1" value="<?php print $row->tag1; ?>"
+                    name="tag1">
             </div>
         </div>
 
@@ -42,7 +49,7 @@ $row = $res->fetch_object();
         <div class="col-12">
             <div class="mb-3">
                 <label for=" content1" class="form-label">Conteúdo 1</label>
-                <textarea class="form-control" id="content1" rows="5" name="content1"><?php print $row->content1; ?></textarea>
+                <textarea class="content" id="content1" name="content1"><?php print $row->content1; ?></textarea>
             </div>
         </div>
 
@@ -51,7 +58,7 @@ $row = $res->fetch_object();
         <div class="col-12">
             <div class="mb-3">
                 <label for="content2" class="form-label">Conteúdo 2</label>
-                <textarea class="form-control" id="content2" rows="5" name="content2"><?php print $row->content2; ?></textarea>
+
             </div>
         </div>
 

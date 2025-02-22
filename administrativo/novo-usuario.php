@@ -1,3 +1,13 @@
+<link rel="stylesheet" href="richtext.min.css">
+
+<script src="/path/to/cdn/jquery.min.js"></script>
+<script src="/path/to/jquery.richtext.min.js"></script>
+
+<textarea class="content" name="example"></textarea>
+
+
+
+
 <form action="?page=salvar" method="post">
     <div class="mb-3">
         <input type="hidden" name="acao" value="cadastrar">

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CRUD-php</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./js/richtext.min.css">
+    <script src="https://cdn-script.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    <script src="./js/jquery.richtext.min.js"></script>
 </head>
 
 <body>
@@ -35,29 +39,37 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
-            include("config.php");
-            switch (@$_REQUEST["page"]) {
-                case "novo":
-                    include("novo-usuario.php");
-                    break;
-                case "listar":
-                    include("listar-usuario.php");
-                    break;
-                case "salvar":
-                    include("salvar-usuario.php");
-                    break;
+                include("config.php");
+                switch (@$_REQUEST["page"]) {
+                    case "novo":
+                        include("novo-usuario.php");
+                        break;
+                    case "listar":
+                        include("listar-usuario.php");
+                        break;
+                    case "salvar":
+                        include("salvar-usuario.php");
+                        break;
                     case "editar":
-                      include("editar-usuario.php");
-                      break;
-                default:
-                    print "<h1>Bem-vindos!</h1>";
-            }
-            ?>
+                        include("editar-usuario.php");
+                        break;
+                    default:
+                        print "<h1>Bem-vindos!</h1>";
+                }
+                ?>
             </div>
         </div>
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        $(document).on('ready', function() {
+            $('.content').richText();
+        });
+    </script>
+
 </body>
 
 </html>
