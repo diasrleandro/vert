@@ -10,10 +10,10 @@ if ($qtd > 0) {
     print "<table class='table table-hover table-striped table-bordered'>";
     print "<tr>";
     print "<th>#</th>";
-    print "<th>Title</th>";
-    print "<th>Content 1</th>";
+    print "<th>Título</th>";
+    print "<th>Sub Título 1</th>";
 
-    print "<th>Content 2</th>";
+    print "<th>Conteudo</th>";
     print "<th>Ações</th>";
     print "</tr>";
 

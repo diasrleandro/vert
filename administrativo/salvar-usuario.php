@@ -45,7 +45,7 @@ switch ($_REQUEST["acao"]) {
 
         $sql = "UPDATE site SET
                         title='$title',
-                        tag1='$tag1',
+                        -- tag1='$tag1',
                         content1='$content1',
                         content2='$content2'
                     WHERE id=$id";
